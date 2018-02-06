@@ -1,0 +1,8 @@
+version: '3.2'
+services:
+  backup:
+    build: ./
+    container_name: dropbox
+    volumes:
+    - './volumes/backup/:/root/Dropbox'
+    restart: always
